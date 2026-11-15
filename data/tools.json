@@ -1,0 +1,246 @@
+[
+  {
+    "id": "chatgpt-plus",
+    "name": "ChatGPT Plus",
+    "category": "AI Assistants & LLMs",
+    "pricingModel": "Freemium",
+    "startingPrice": 20,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.8,
+    "website": "https://chat.openai.com",
+    "tagline": "Multi-modal AI assistant for coding, writing, analysis, and workflow automation.",
+    "bestFor": "General productivity, content drafting, data analysis, and multi-modal reasoning",
+    "pros": [
+      "Strong multimodal capabilities (voice, vision, code interpreter)",
+      "Custom GPT ecosystem and memory features",
+      "Fast response speeds on flagship models"
+    ],
+    "cons": [
+      "Usage caps during peak hours on flagship models",
+      "Team workspace features require higher-tier plans"
+    ],
+    "features": ["Code Execution", "Web Search", "Image Generation", "Custom Bots", "API Access"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "claude-pro",
+    "name": "Claude Pro",
+    "category": "AI Assistants & LLMs",
+    "pricingModel": "Freemium",
+    "startingPrice": 20,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.9,
+    "website": "https://claude.ai",
+    "tagline": "High-context AI assistant renowned for coding accuracy, nuanced writing, and Artifacts.",
+    "bestFor": "Software engineering, long-document analysis, and natural-sounding copywriting",
+    "pros": [
+      "200K+ token context window for massive codebases and PDFs",
+      "Interactive Artifacts panel for live UI and code previews",
+      "Superior coding and refactoring quality"
+    ],
+    "cons": [
+      "Strict message limits when sending very large context files",
+      "No built-in raster image generation"
+    ],
+    "features": ["200K Context", "Live Artifacts", "Project Knowledge", "Code Execution", "API Access"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "gemini-advanced",
+    "name": "Gemini Advanced",
+    "category": "AI Assistants & LLMs",
+    "pricingModel": "Freemium",
+    "startingPrice": 19.99,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.9,
+    "website": "https://gemini.google.com",
+    "tagline": "Google's flagship AI suite with deep Workspace integration and massive 1M+ token context.",
+    "bestFor": "Google Workspace users, deep research, video/audio understanding, and large-scale analysis",
+    "pros": [
+      "1M+ token context window handles hours of video or thousands of lines of code",
+      "Includes 2TB of Google One cloud storage",
+      "Native integration with Docs, Drive, Gmail, and Sheets"
+    ],
+    "cons": [
+      "Some Workspace integrations require matching Google account tiers"
+    ],
+    "features": ["1M+ Context", "Workspace Integration", "Deep Research", "2TB Storage", "API Access"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "cursor-ide",
+    "name": "Cursor",
+    "category": "AI Coding & DevTools",
+    "pricingModel": "Freemium",
+    "startingPrice": 20,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": false,
+    "rating": 4.8,
+    "website": "https://cursor.com",
+    "tagline": "AI-first code editor with multi-file composer, codebase indexing, and predictive tab completion.",
+    "bestFor": "Full-stack developers looking for fast inline edits and repository-wide refactoring",
+    "pros": [
+      "Seamless VS Code extension compatibility",
+      "Fast multi-line Tab autocomplete prediction",
+      "Codebase-wide semantic search and indexing"
+    ],
+    "cons": [
+      "Fast premium request pool can run out for heavy daily users",
+      "Requires local desktop installation"
+    ],
+    "features": ["Codebase Indexing", "Multi-File Composer", "Tab Autocomplete", "Terminal Agent"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "category": "AI Coding & DevTools",
+    "pricingModel": "Freemium",
+    "startingPrice": 10,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.7,
+    "website": "https://github.com/features/copilot",
+    "tagline": "Enterprise-ready AI coding assistant integrated directly into GitHub, VS Code, and JetBrains IDEs.",
+    "bestFor": "Teams already on GitHub and developers using JetBrains, Visual Studio, or VS Code",
+    "pros": [
+      "Affordable $10/month entry point for individual developers",
+      "Works across VS Code, JetBrains, Neovim, and GitHub PR reviews",
+      "Strong enterprise IP indemnity and security controls"
+    ],
+    "cons": [
+      "Multi-file autonomous refactoring can feel slower than standalone AI IDEs"
+    ],
+    "features": ["IDE Extensions", "PR Summaries", "CLI Assistant", "Multi-Model Selection"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "perplexity-pro",
+    "name": "Perplexity Pro",
+    "category": "AI Search & Research",
+    "pricingModel": "Freemium",
+    "startingPrice": 20,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.8,
+    "website": "https://perplexity.ai",
+    "tagline": "Real-time AI answer engine with verified citations, academic search, and multi-model switching.",
+    "bestFor": "Market researchers, journalists, students, and analysts needing cited real-time facts",
+    "pros": [
+      "Every claim includes clickable source citations",
+      "Pro Search conducts multi-step autonomous web research",
+      "Includes $5/month in Sonar API credits for Pro subscribers"
+    ],
+    "cons": [
+      "Less suited for creative fiction writing or full-project code editing"
+    ],
+    "features": ["Live Citations", "Academic Search", "File Upload", "API Credits Included"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "n8n-cloud",
+    "name": "n8n",
+    "category": "AI Workflow & Automation",
+    "pricingModel": "Open Source / Freemium",
+    "startingPrice": 20,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.9,
+    "website": "https://n8n.io",
+    "tagline": "Fair-code workflow automation platform with native AI agent nodes, webhooks, and self-hosting.",
+    "bestFor": "Technical builders and agencies automating multi-step AI agents and API integrations",
+    "pros": [
+      "Can be self-hosted for free with unlimited executions",
+      "Charged per full workflow execution rather than per single step",
+      "Native LangChain and AI Agent memory nodes built in"
+    ],
+    "cons": [
+      "Steeper learning curve than basic consumer automation tools"
+    ],
+    "features": ["Self-Hostable", "AI Agent Nodes", "Custom JavaScript/Python", "400+ Integrations"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "make-automation",
+    "name": "Make (formerly Integromat)",
+    "category": "AI Workflow & Automation",
+    "pricingModel": "Freemium",
+    "startingPrice": 9,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.7,
+    "website": "https://make.com",
+    "tagline": "Visual drag-and-drop automation builder for connecting SaaS apps, webhooks, and AI APIs.",
+    "bestFor": "No-code marketers and business owners automating CRM, email, and content pipelines",
+    "pros": [
+      "Highly visual scenario builder with real-time data inspection",
+      "Much more affordable per operation than legacy automation platforms",
+      "1,500+ pre-built app connectors"
+    ],
+    "cons": [
+      "Complex looping workflows consume operations quickly",
+      "No self-hosted open-source edition"
+    ],
+    "features": ["Visual Canvas", "1500+ Apps", "Webhooks", "Error Routers", "Free Tier"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "zapier-automation",
+    "name": "Zapier",
+    "category": "AI Workflow & Automation",
+    "pricingModel": "Freemium",
+    "startingPrice": 19.99,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.6,
+    "website": "https://zapier.com",
+    "tagline": "The largest no-code automation ecosystem with 6,000+ app integrations, Tables, and AI Canvas.",
+    "bestFor": "Non-technical teams needing instant connectors to niche business software",
+    "pros": [
+      "Unmatched library of 6,000+ SaaS integrations",
+      "Easiest setup for beginners with zero coding experience",
+      "Built-in Tables and Interfaces for internal tools"
+    ],
+    "cons": [
+      "Becomes expensive quickly at high monthly task volumes"
+    ],
+    "features": ["6000+ Integrations", "Zapier Tables", "AI Chatbots", "No-Code Setup"],
+    "updatedAt": "2026-11-15"
+  },
+  {
+    "id": "elevenlabs-ai",
+    "name": "ElevenLabs",
+    "category": "AI Audio & Video",
+    "pricingModel": "Freemium",
+    "startingPrice": 5,
+    "billingCycle": "month",
+    "freeTier": true,
+    "apiAvailable": true,
+    "rating": 4.9,
+    "website": "https://elevenlabs.io",
+    "tagline": "Ultra-realistic AI voice generator, voice cloning, and automated multi-language dubbing studio.",
+    "bestFor": "Content creators, audiobook publishers, game studios, and conversational AI builders",
+    "pros": [
+      "Industry-leading emotional inflection and voice realism",
+      "Low-latency conversational AI voice agent SDK",
+      "Automated video dubbing across 29+ languages"
+    ],
+    "cons": [
+      "Character credits are consumed even on regenerated takes"
+    ],
+    "features": ["Voice Cloning", "AI Dubbing", "Sound Effects", "Low-Latency API", "Free Tier"],
+    "updatedAt": "2026-11-15"
+  }
+]

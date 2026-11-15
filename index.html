@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToolPulse AI &amp; SaaS Benchmark — Compare AI Tools, Pricing &amp; Team ROI Calculator</title>
+  <meta name="description" content="Compare verified AI software pricing, discover open-source alternatives, and calculate your annual team SaaS and AI savings." />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #111827;
+      --surface-2: #1f2937;
+      --border: #2e3a4e;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --primary: #38bdf8;
+      --accent: #34d399;
+      --warn: #fbbf24;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(17, 24, 39, 0.9);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .brand-badge {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #0b0f19;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+    .nav-links { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+    .hero {
+      padding: 3.2rem 0 2.2rem;
+      border-bottom: 1px solid var(--border);
+      background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 55%);
+    }
+    .hero h1 { font-size: clamp(1.8rem, 3.5vw, 2.65rem); line-height: 1.2; margin-bottom: 0.85rem; }
+    .hero p { color: var(--muted); max-width: 760px; font-size: 1.05rem; }
+    .badge-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+    .badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--primary);
+      border: 1px solid var(--border);
+      font-weight: 600;
+    }
+    .badge.green { color: var(--accent); }
+    .badge.gold { color: var(--warn); }
+    .calc-box {
+      background: linear-gradient(145deg, #111827, #172033);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      margin: 2rem 0;
+    }
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.15rem;
+      margin-top: 1.15rem;
+    }
+    .input-group label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .input-group input, .input-group select {
+      width: 100%;
+      padding: 0.65rem 0.8rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    .calc-result {
+      margin-top: 1.25rem;
+      padding: 1.1rem;
+      border-radius: 10px;
+      background: rgba(52, 211, 153, 0.1);
+      border: 1px solid rgba(52, 211, 153, 0.35);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 1.2rem;
+      margin: 1.75rem 0;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .price-tag { font-size: 1.15rem; font-weight: 700; color: #fff; }
+    .btn {
+      display: inline-block;
+      padding: 0.55rem 0.95rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      background: var(--surface-2);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn:hover { border-color: var(--primary); text-decoration: none; }
+    .ad-slot {
+      margin: 2rem 0;
+      padding: 1.2rem;
+      border: 1px dashed var(--border);
+      border-radius: 10px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    footer {
+      margin-top: 3.5rem;
+      padding: 2.2rem 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">AI &amp; SaaS</span>
+        <span>ToolPulse Benchmark</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#directory">Directory</a>
+        <a href="#calculator">ROI Calculator</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badge-row">
+        <span class="badge green">Autonomous Daily Cloud Updates</span>
+        <span class="badge">10+ Verified Platforms</span>
+        <span class="badge gold">AdSense Ready Architecture</span>
+      </div>
+      <h1>Find the Best AI &amp; SaaS Alternatives — Backed by Real Pricing Data</h1>
+      <p>Compare subscription tiers, API availability, and open-source alternatives. Use our interactive calculator below to estimate your team's annual software spend and productivity ROI.</p>
+    </section>
+
+    <section id="calculator" class="calc-box">
+      <h2>Interactive Team AI &amp; SaaS ROI Calculator</h2>
+      <p style="color:var(--muted);font-size:0.95rem;">Estimate your annual seat cost vs. productivity time saved across your team.</p>
+      <div class="calc-grid">
+        <div class="input-group">
+          <label for="calc-tool">Select Software Tier</label>
+          <select id="calc-tool">
+            <option value="20">ChatGPT Plus ($20/mo)</option>
+            <option value="20">Claude Pro ($20/mo)</option>
+            <option value="19.99">Gemini Advanced ($19.99/mo)</option>
+            <option value="20">Cursor IDE ($20/mo)</option>
+            <option value="10">GitHub Copilot ($10/mo)</option>
+            <option value="20">Perplexity Pro ($20/mo)</option>
+            <option value="9">Make Automation ($9/mo)</option>
+            <option value="0">n8n Self-Hosted ($0/mo)</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="calc-seats">Team Size (Seats)</label>
+          <input id="calc-seats" type="number" min="1" max="500" value="5" />
+        </div>
+        <div class="input-group">
+          <label for="calc-hours">Hours Saved per Person / Week</label>
+          <input id="calc-hours" type="number" min="1" max="40" value="4" />
+        </div>
+        <div class="input-group">
+          <label for="calc-rate">Avg. Hourly Value ($ USD)</label>
+          <input id="calc-rate" type="number" min="5" max="500" value="35" />
+        </div>
+      </div>
+      <div class="calc-result">
+        <div>
+          <div style="font-size:0.85rem;color:var(--muted);">Annual Subscription Cost</div>
+          <div id="res-cost" style="font-size:1.4rem;font-weight:800;color:#fff;">$1,200 / yr</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;color:var(--muted);">Estimated Annual Productivity Value</div>
+          <div id="res-value" style="font-size:1.4rem;font-weight:800;color:var(--accent);">$36,400 / yr</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;color:var(--muted);">Net Annual ROI</div>
+          <div id="res-roi" style="font-size:1.4rem;font-weight:800;color:var(--primary);">+$35,200 (30.3x)</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot">Advertisement / Sponsored Placement Ready (Google AdSense Responsive Unit)</div>
+
+    <div id="directory" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <h2>Verified Software &amp; AI Directory</h2>
+      <input id="search-box" type="search" placeholder="Filter by tool or category..." style="padding:0.6rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:#fff;min-width:250px;" />
+    </div>
+
+    <div class="grid" id="tools-grid">
+      <article class="card" data-search="chatgpt plus ai assistants llms openai">
+        <div>
+          <div class="badge-row"><span class="badge">AI Assistants &amp; LLMs</span><span class="badge green">Freemium</span><span class="badge gold">★ 4.8</span></div>
+          <h3>ChatGPT Plus</h3>
+          <p style="color:var(--muted);font-size:0.92rem;margin:0.5rem 0 1rem;">Multi-modal AI assistant for coding, writing, analysis, and workflow automation.</p>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:0.85rem;display:flex;justify-content:space-between;align-items:center;">
+          <span class="price-tag">$20<span style="color:var(--muted);font-size:0.8rem;">/month</span></span>
+          <a class="btn" href="https://chat.openai.com" target="_blank" rel="noopener noreferrer">Official Site →</a>
+        </div>
+      </article>
+
+      <article class="card" data-search="claude pro ai assistants llms anthropic coding">
+        <div>
+          <div class="badge-row"><span class="badge">AI Assistants &amp; LLMs</span><span class="badge green">Freemium</span><span class="badge gold">★ 4.9</span></div>
+          <h3>Claude Pro</h3>
+          <p style="color:var(--muted);font-size:0.92rem;margin:0.5rem 0 1rem;">High-context 200K+ AI assistant renowned for coding accuracy, nuanced writing, and Artifacts.</p>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:0.85rem;display:flex;justify-content:space-between;align-items:center;">
+          <span class="price-tag">$20<span style="color:var(--muted);font-size:0.8rem;">/month</span></span>
+          <a class="btn" href="https://claude.ai" target="_blank" rel="noopener noreferrer">Official Site →</a>
+        </div>
+      </article>
+
+      <article class="card" data-search="gemini advanced google workspace ai assistants">
+        <div>
+          <div class="badge-row"><span class="badge">AI Assistants &amp; LLMs</span><span class="badge green">Freemium</span><span class="badge gold">★ 4.9</span></div>
+          <h3>Gemini Advanced</h3>
+          <p style="color:var(--muted);font-size:0.92rem;margin:0.5rem 0 1rem;">Google's flagship AI suite with deep Workspace integration, 2TB storage, and 1M+ token context.</p>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:0.85rem;display:flex;justify-content:space-between;align-items:center;">
+          <span class="price-tag">$19.99<span style="color:var(--muted);font-size:0.8rem;">/month</span></span>
+          <a class="btn" href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Official Site →</a>
+        </div>
+      </article>
+
+      <article class="card" data-search="cursor ide ai coding devtools editor">
+        <div>
+          <div class="badge-row"><span class="badge">AI Coding &amp; DevTools</span><span class="badge green">Freemium</span><span class="badge gold">★ 4.8</span></div>
+          <h3>Cursor</h3>
+          <p style="color:var(--muted);font-size:0.92rem;margin:0.5rem 0 1rem;">AI-first code editor with multi-file composer, codebase indexing, and predictive tab completion.</p>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:0.85rem;display:flex;justify-content:space-between;align-items:center;">
+          <span class="price-tag">$20<span style="color:var(--muted);font-size:0.8rem;">/month</span></span>
+          <a class="btn" href="https://cursor.com" target="_blank" rel="noopener noreferrer">Official Site →</a>
+        </div>
+      </article>
+
+      <article class="card" data-search="n8n workflow automation open source agents">
+        <div>
+          <div class="badge-row"><span class="badge">AI Workflow &amp; Automation</span><span class="badge green">Open Source</span><span class="badge gold">★ 4.9</span></div>
+          <h3>n8n</h3>
+          <p style="color:var(--muted);font-size:0.92rem;margin:0.5rem 0 1rem;">Fair-code workflow automation platform with native AI agent nodes, webhooks, and free self-hosting.</p>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:0.85rem;display:flex;justify-content:space-between;align-items:center;">
+          <span class="price-tag">Free / $20<span style="color:var(--muted);font-size:0.8rem;">/month</span></span>
+          <a class="btn" href="https://n8n.io" target="_blank" rel="noopener noreferrer">Official Site →</a>
+        </div>
+      </article>
+
+      <article class="card" data-search="elevenlabs ai audio voice cloning dubbing">
+        <div>
+          <div class="badge-row"><span class="badge">AI Audio &amp; Video</span><span class="badge green">Freemium</span><span class="badge gold">★ 4.9</span></div>
+          <h3>ElevenLabs</h3>
+          <p style="color:var(--muted);font-size:0.92rem;margin:0.5rem 0 1rem;">Ultra-realistic AI voice generator, voice cloning, and automated multi-language dubbing studio.</p>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:0.85rem;display:flex;justify-content:space-between;align-items:center;">
+          <span class="price-tag">$5<span style="color:var(--muted);font-size:0.8rem;">/month</span></span>
+          <a class="btn" href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer">Official Site →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+      <div>
+        <strong>ToolPulse AI &amp; SaaS Benchmark</strong> — Independent Software Pricing &amp; ROI Directory.
+      </div>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const toolEl = document.getElementById('calc-tool');
+      const seatsEl = document.getElementById('calc-seats');
+      const hoursEl = document.getElementById('calc-hours');
+      const rateEl = document.getElementById('calc-rate');
+      const resCost = document.getElementById('res-cost');
+      const resValue = document.getElementById('res-value');
+      const resRoi = document.getElementById('res-roi');
+
+      function updateCalc() {
+        const monthly = parseFloat(toolEl.value) || 0;
+        const seats = Math.max(1, parseInt(seatsEl.value, 10) || 1);
+        const hours = Math.max(0, parseFloat(hoursEl.value) || 0);
+        const rate = Math.max(1, parseFloat(rateEl.value) || 1);
+
+        const annualCost = monthly * seats * 12;
+        const annualValue = seats * hours * 52 * rate;
+        const net = annualValue - annualCost;
+        const mult = annualCost > 0 ? (annualValue / annualCost).toFixed(1) + 'x' : '∞';
+
+        resCost.textContent = '$' + annualCost.toLocaleString() + ' / yr';
+        resValue.textContent = '$' + annualValue.toLocaleString() + ' / yr';
+        resRoi.textContent = (net >= 0 ? '+$' : '-$') + Math.abs(net).toLocaleString() + ' (' + mult + ')';
+      }
+
+      [toolEl, seatsEl, hoursEl, rateEl].forEach(el => el.addEventListener('input', updateCalc));
+      updateCalc();
+
+      const searchBox = document.getElementById('search-box');
+      const cards = Array.from(document.querySelectorAll('#tools-grid article'));
+      searchBox.addEventListener('input', function() {
+        const q = searchBox.value.toLowerCase().trim();
+        cards.forEach(card => {
+          const hay = card.getAttribute('data-search') || '';
+          card.style.display = hay.includes(q) ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

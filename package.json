@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Autonomous Global AI & SaaS Alternatives Directory with Programmatic SEO, Interactive Calculators, and AdSense Compliance",
   "scripts": {
-    "fetch": "node scripts/fetch-updates.js",
-    "build": "node scripts/build.js",
-    "autopilot": "node scripts/fetch-updates.js && node scripts/build.js"
+    "fetch": "node fetch-updates.js",
+    "build": "node build.js",
+    "autopilot": "node fetch-updates.js && node build.js"
   },
   "engines": {
     "node": ">=18.0.0"
