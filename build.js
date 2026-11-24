@@ -281,14 +281,35 @@ function renderLayout({ title, description, canonicalPath, content, jsonLd }) {
 
 function generatePairs(tools) {
   const pairs = [];
+  const seen = new Set();
+  const addPair = (a, b) => {
+    const idxA = tools.indexOf(a);
+    const idxB = tools.indexOf(b);
+    const [first, second] = idxA < idxB ? [a, b] : [b, a];
+    const key = `${first.id}-vs-${second.id}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      pairs.push([first, second]);
+    }
+  };
+
+  for (const tool of tools) {
+    const alternatives = tools.filter((t) => t.id !== tool.id);
+    const sameCategory = alternatives.filter((t) => t.category === tool.category);
+    const topAlts = (sameCategory.length >= 2 ? sameCategory : alternatives).slice(0, 4);
+    for (const alt of topAlts) {
+      addPair(tool, alt);
+    }
+  }
+
   for (let i = 0; i < tools.length; i++) {
     for (let j = i + 1; j < tools.length; j++) {
-      if (tools[i].category === tools[j].category || pairs.length < 15) {
-        pairs.push([tools[i], tools[j]]);
+      if (tools[i].category === tools[j].category || pairs.length < 24) {
+        addPair(tools[i], tools[j]);
       }
     }
   }
-  return pairs.slice(0, 24);
+  return pairs;
 }
 
 function buildSite() {
