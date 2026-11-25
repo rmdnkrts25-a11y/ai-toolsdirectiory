@@ -10,19 +10,19 @@
     "apiAvailable": true,
     "rating": 4.8,
     "website": "https://chatgpt.com",
-    "tagline": "OpenAI's flagship multi-modal AI assistant with GPT-6 / GPT-6.1 Sol models, Codex agent, voice, and projects.",
+    "tagline": "OpenAI's flagship multi-modal AI assistant with GPT-6.2 Sol & Astra models, Codex agent, voice, and projects.",
     "bestFor": "General productivity, frontier reasoning, Codex coding workflows, data analysis, and multi-modal tasks",
     "pros": [
-      "Expanded access to frontier GPT-6 / GPT-6.1 Sol reasoning models and Codex coding tools",
+      "Access to frontier GPT-6.2 Sol & Astra models (1.05M context window) and Codex coding tools",
       "Strong multi-modal suite with advanced voice, image generation, custom Projects, and extended memory",
-      "Flexible consumer lineup with Free ($0), Go ($8/mo), Plus ($20/mo), and Pro ($100-$500/mo) tiers"
+      "Flexible consumer lineup with Free ($0), Go ($8/mo), Plus ($20/mo), and Pro ($100/$200/$500/mo) tiers"
     ],
     "cons": [
       "No annual discount on individual Plus ($20/mo) subscriptions",
-      "Heavy power users require Pro tiers ($100-$500/mo) for highest limits and Ultrafast mode"
+      "Heavy power users require Pro tiers ($100-$500/mo) for highest limits, API credits, and Ultrafast mode"
     ],
-    "features": ["GPT-6 / Sol Models", "Codex Agent", "Custom Projects", "Image & Voice", "API Access"],
-    "updatedAt": "2026-11-24"
+    "features": ["GPT-6.2 Sol & Astra", "Codex Agent", "Custom Projects", "Image & Voice", "API Access"],
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "claude-pro",
@@ -35,10 +35,10 @@
     "apiAvailable": true,
     "rating": 4.9,
     "website": "https://claude.ai",
-    "tagline": "Anthropic's high-context AI assistant featuring Claude Code, Projects, interactive Artifacts, and Fable/Sonnet models.",
+    "tagline": "Anthropic's high-context AI assistant featuring Claude Code, Projects, Artifacts, and Fable 5.2 / Opus 5.5 / Sonnet 5.5 models.",
     "bestFor": "Software engineering, Claude Code terminal workflows, long-document analysis, and nuanced writing",
     "pros": [
-      "Includes Claude Code, Projects, Artifacts, and 200K+ token context across Sonnet, Haiku, and Fable models",
+      "Includes Claude Code, Projects, Artifacts, and 1M token context across Fable 5.2, Opus 5.5, Sonnet 5.5, and Haiku 5.5",
       "Annual billing reduces Pro to $17/mo ($200/yr); Max ($100/mo) and Ultra ($200/mo) bundle matching API credits",
       "Industry-leading code refactoring accuracy and natural prose quality"
     ],
@@ -46,8 +46,8 @@
       "Pro enforces 5-hour rolling usage windows; removing the 5-hour cap requires Ultra ($200/mo)",
       "No built-in raster image generation"
     ],
-    "features": ["Claude Code", "200K+ Context", "Live Artifacts", "Projects", "API Access"],
-    "updatedAt": "2026-11-24"
+    "features": ["Claude Code", "1M Context (5.5/5.2)", "Live Artifacts", "Projects", "API Access"],
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "gemini-advanced",
@@ -60,18 +60,18 @@
     "apiAvailable": true,
     "rating": 4.9,
     "website": "https://gemini.google.com",
-    "tagline": "Google's rebranded Google AI Pro suite combining frontier Gemini models, Deep Research, Workspace AI, and 5TB storage.",
+    "tagline": "Google's Google AI Pro suite combining frontier Gemini Pro/Neon models, Deep Research, Workspace AI, and 5TB storage.",
     "bestFor": "Google Workspace users, Deep Research reports, long-context video/audio analysis, and cloud storage bundles",
     "pros": [
-      "Upgraded bundle includes 5 TB Google One cloud storage and Google Flow credits at $19.99/mo ($199.99/yr)",
+      "Bundle includes 5 TB Google One storage, $10/mo Google Cloud credits, and Flow credits at $19.99/mo ($199.99/yr)",
       "1M+ token context window with native integration across Gmail, Docs, Drive, and Sheets",
-      "Entry AI Plus ($4.99/mo, 400GB) and AI Ultra ($99.99+/mo, 20TB+) tiers cover both light and heavy users"
+      "AI Plus ($4.99/mo, 400GB) and AI Ultra 5x ($99.99/mo, 20TB) / 20x ($199.99/mo, 30TB) cover light to heavy users"
     ],
     "cons": [
-      "YouTube Premium and highest frontier compute quotas require the $99.99+/mo AI Ultra tier"
+      "Gemini Carbon models, YouTube Premium, and Colab compute units require the $99.99-$199.99/mo AI Ultra tiers"
     ],
     "features": ["1M+ Context", "Workspace AI", "Deep Research", "5TB Storage", "API Access"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "grok-ai",
@@ -87,7 +87,7 @@
     "tagline": "xAI's Grok 4.6/4.7 assistant and developer API, bundled with Cursor and X perks via The X Subscription.",
     "bestFor": "Real-time X/web intelligence, bundled Grok + Cursor subscribers, and xAI multi-agent API workloads",
     "pros": [
-      "Unified X Subscription bundles Grok + Cursor usage starting at $8/mo Plus ($80/yr) and $30/mo Premium",
+      "Unified X Subscription bundles Grok + Cursor usage across Plus ($8/mo), Premium ($30/mo), Super ($100/mo), and Ultra ($200/mo)",
       "Grok 4.6/4.7 and 4.3/4.20 API models support 500K-1M context windows starting at $1-$2 per 1M input tokens",
       "Includes real-time X platform context, image generation, and video generation on Premium+"
     ],
@@ -96,7 +96,7 @@
       "API requests reaching 200K+ tokens double token pricing across the entire prompt"
     ],
     "features": ["Grok 4.7 Models", "X Bundle + Cursor", "500K-1M Context API", "Video & Image Gen", "Real-Time Search"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "deepseek-ai",
@@ -113,15 +113,15 @@
     "bestFor": "Cost-sensitive developers, high-volume reasoning APIs, and free consumer chat with web search",
     "pros": [
       "Free consumer web and mobile chat with built-in web search, deep thinking, and file/PDF parsing",
-      "DeepSeek-Flash (V4.1-Flash) API starts at $0.15/1M input and $0.60/1M output off-peak with 1M context",
-      "Automatic context caching drops cache-hit input costs to fractions of a cent per million tokens"
+      "V4.1-Flash ($0.15/$0.60 per 1M off-peak) and V4-Pro ($0.66/$1.98 per 1M off-peak) APIs offer 1M context",
+      "Automatic context caching drops cache-hit input costs to $0.003-$0.022 per 1M tokens off-peak"
     ],
     "cons": [
-      "Peak weekday API hours (UTC) double token rates compared to off-peak windows",
+      "Peak weekday API hours (01:00-04:00 & 06:00-10:00 UTC) double token rates compared to off-peak windows",
       "Lacks native video/audio generation or deep Western SaaS office suite integrations"
     ],
-    "features": ["V4-Pro & Flash", "1M Context Window", "Peak/Off-Peak API", "Context Caching", "Free Web Chat"],
-    "updatedAt": "2026-11-24"
+    "features": ["V4-Pro & V4.1-Flash", "1M Context Window", "Peak/Off-Peak API", "Context Caching", "Free Web Chat"],
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "cursor-ide",
@@ -137,16 +137,16 @@
     "tagline": "AI-first IDE bundled with The X Subscription, offering Cloud Agents, Bugbot code reviews, and weekly usage pools.",
     "bestFor": "Full-stack engineers wanting multi-file Cloud Agents, Bugbot PR reviews, and fast Tab autocomplete",
     "pros": [
-      "Plus tier starts at $8/mo ($80/yr); Premium ($30/mo) unlocks 4x usage, Cloud Agents, Bugbot, and Origin hosting",
+      "Plus starts at $8/mo ($80/yr); Premium ($30/mo) unlocks 4x usage, Cloud Agents, Bugbot, and Origin hosting; scales to Super ($100) & Ultra ($200)",
       "Seamless VS Code compatibility with codebase indexing and fast multi-line Tab predictions",
       "Bundled with The X Subscription, sharing weekly usage pools across Cursor and Grok"
     ],
     "cons": [
-      "Third-party models (Claude, GPT, Gemini) require Premium ($30/mo+) and bill separately via prepaid API credit",
-      "Plus ($8/mo) excludes Cloud Agents, Automations, and Bugbot"
+      "Third-party models (Claude, GPT, Gemini) require Premium ($30/mo+) and bill separately via API list prices",
+      "Plus ($8/mo) restricts Cursor to Grok models and excludes Cloud Agents, Automations, and Bugbot"
     ],
     "features": ["Cloud Agents", "Bugbot Reviews", "Tab Autocomplete", "Codebase Indexing", "Origin Hosting"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "github-copilot",
@@ -170,7 +170,7 @@
       "Heavy agentic coding workflows consume monthly GitHub AI Credits quickly on the $10 Pro plan"
     ],
     "features": ["1,500+ AI Credits", "Unlimited Completions", "Multi-IDE Support", "PR Reviews", "Enterprise Controls"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "windsurf-ide",
@@ -195,7 +195,7 @@
       "No standalone public developer API (IDE-focused)"
     ],
     "features": ["Cascade Agent", "Unlimited Tab Edits", "Daily/Weekly Quotas", "Frontier Models", "Devin Ecosystem"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "lovable-dev",
@@ -212,15 +212,15 @@
     "bestFor": "Founders, product managers, and designers shipping full-stack web apps and MVPs from natural language",
     "pros": [
       "Unified credit pool covers AI app building, Lovable Cloud hosting, and embedded in-app AI features",
-      "Pro starts at $25/mo (100 monthly credits + 5 daily bonus credits) with private projects and code export",
-      "Free tier offers 5 daily credits (~30/mo) and 20 Cloud credits for rapid prototyping"
+      "Pro starts at $25/mo (~$21/mo annual) for 100 monthly credits with private projects, custom domains, and code export",
+      "Free tier offers 5 daily credits (capped at 30/mo) and 20 Cloud credits for rapid prototyping"
     ],
     "cons": [
       "Complex iterative debugging can burn monthly build credits rapidly on lower tiers",
-      "Business tier starts at $50/mo for team workspaces and SSO"
+      "Business tier starts at $50/mo (~$42/mo annual) for team workspaces and SSO"
     ],
     "features": ["Full-Stack Builder", "Lovable Cloud", "Code Export", "Custom Domains", "Free Daily Credits"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "bolt-new",
@@ -237,7 +237,7 @@
     "bestFor": "Rapid in-browser prototyping, full-stack web deployments, and interactive frontend/backend builds",
     "pros": [
       "Generous Free plan includes 1M tokens/month (300K/day cap) and integrated web hosting",
-      "Pro ($25/mo) provides 10M tokens/month with 1-month unused token rollover and custom domains",
+      "Pro ($25/mo or $216/yr at ~$18/mo) provides 10M tokens/month with 1-month rollover and custom domains",
       "Zero local setup required—runs Node.js, packages, and database connectors directly in the browser"
     ],
     "cons": [
@@ -245,7 +245,7 @@
       "Teams plan ($30/member/mo) required for centralized billing and organization sharing"
     ],
     "features": ["In-Browser IDE", "10M Tokens (Pro)", "Token Rollover", "Integrated Hosting", "Database Connectors"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "perplexity-pro",
@@ -263,14 +263,14 @@
     "pros": [
       "Every answer provides clickable source citations with multi-step Deep Research synthesis",
       "Flexible pricing across Free ($0), Education Pro ($10/mo), Pro ($20/mo or $200/yr), and Max ($200/mo)",
-      "Enterprise Pro ($40/seat/mo) adds shared knowledge hubs and admin governance"
+      "Enterprise Pro ($40/seat/mo or $400/yr) adds shared knowledge hubs and admin governance"
     ],
     "cons": [
       "Less suited for creative fiction writing or multi-file software repository editing",
       "Highest Deep Research and asset limits require the $200/mo Max tier"
     ],
     "features": ["Live Citations", "Deep Research", "Multi-Model Switch", "File Analysis", "Sonar API"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "n8n-cloud",
@@ -295,7 +295,7 @@
       "Cloud Pro ($50/mo annual, $60/mo monthly) needed for 10,000 executions and 50 concurrent runs"
     ],
     "features": ["Self-Hostable", "Per-Execution Billing", "AI Agent Nodes", "Custom JS/Python", "400+ Integrations"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "make-automation",
@@ -320,7 +320,7 @@
       "No self-hosted open-source deployment option"
     ],
     "features": ["Visual Canvas", "10K+ Credits", "Make Code JS/Python", "Webhooks & Routers", "Free Tier"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "zapier-automation",
@@ -344,7 +344,7 @@
       "Task-based pricing scales up steeply for high-volume workflows; Team starts at $69/mo annual ($103.50 monthly)"
     ],
     "features": ["6000+ Integrations", "Zapier Tables", "Interfaces & Forms", "Multi-Step Zaps", "Free Tier"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "elevenlabs-ai",
@@ -362,14 +362,14 @@
     "pros": [
       "Starter starts at $5/mo annual ($6/mo monthly) for 30,000 credits, commercial rights, and instant voice cloning",
       "Unified credit pool covers TTS, dubbing, SFX, music, and voice agents with 2-month rollover on paid plans",
-      "Creator ($22/mo, 121k credits) unlocks Professional Voice Cloning; Pro ($99/mo) unlocks 44.1kHz PCM API"
+      "Creator ($18.33/mo annual / $22 monthly, 121k credits) unlocks Pro Voice Cloning; Pro ($82.50/mo annual / $99 monthly) adds 600k credits"
     ],
     "cons": [
       "Free tier (10,000 credits/mo) excludes commercial usage rights",
       "Dubbing and complex multi-speaker workflows consume credits faster than standard TTS"
     ],
     "features": ["Voice Cloning", "AI Dubbing", "Music & SFX", "2-Mo Credit Rollover", "Low-Latency API"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "runway-ai",
@@ -394,7 +394,7 @@
       "Older Unlimited tier was replaced by the credit-capped Max plan"
     ],
     "features": ["Gen-4.5 & Aleph 2.0", "4K & ProRes Export", "Custom Voices", "Runway Dev API", "Credit Rollover"],
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "suno-ai",
@@ -407,19 +407,19 @@
     "apiAvailable": false,
     "rating": 4.8,
     "website": "https://suno.com",
-    "tagline": "AI music creation platform and Suno Studio browser DAW with stem separation and commercial licensing.",
+    "tagline": "AI music creation platform featuring v6 / v6-wild models, Suno Studio browser DAW, stem separation, and commercial rights.",
     "bestFor": "Musicians, video creators, podcasters, and indie studios generating original tracks and stems",
     "pros": [
-      "Free tier grants 50 daily credits (~10 songs/day); Pro starts at $8/mo annual ($10/mo monthly) for 2,500 credits",
+      "Free grants 50 daily credits; Pro starts at $8/mo annual ($10/mo monthly) for 2,500 credits and commercial rights",
       "Premier ($24/mo annual / $30/mo monthly) unlocks 10,000 credits, 60 downloads/mo, and Suno Studio DAW",
-      "Paid tiers include commercial usage rights and multi-track stem separation"
+      "Platinum ($100/mo annual / $120/mo monthly) adds v6 / v6-wild models, 15,000 song + 20,000 visual credits, MIDI, and custom models"
     ],
     "cons": [
       "No official self-serve public developer API available",
       "Monthly track download caps apply (20 on Pro, 60 on Premier, 120 on Platinum)"
     ],
-    "features": ["Suno Studio DAW", "Stem Separation", "Commercial Rights", "50 Daily Free Credits", "High-Priority Queue"],
-    "updatedAt": "2026-11-24"
+    "features": ["Suno v6 & v6-wild", "Suno Studio DAW", "Stem Separation", "Commercial Rights", "50 Daily Free Credits"],
+    "updatedAt": "2026-11-25"
   },
   {
     "id": "midjourney-ai",
@@ -432,18 +432,18 @@
     "apiAvailable": false,
     "rating": 4.9,
     "website": "https://www.midjourney.com",
-    "tagline": "Premier AI image generation platform offering Fast GPU hours, Unlimited Relax mode, and Stealth privacy.",
+    "tagline": "Premier AI image generation platform powered by V8 / V8.2 with native 2K HD, Edit Model, Unlimited Relax, and Stealth privacy.",
     "bestFor": "Art directors, concept artists, brand designers, and agencies needing photorealistic and stylized imagery",
     "pros": [
-      "Basic starts at $8/mo annual ($10/mo monthly) for ~3.3 Fast GPU hours (~200 images)",
-      "Standard ($24/mo annual / $30/mo monthly) adds 15 Fast GPU hours, Unlimited Relax mode, and commercial rights",
-      "Pro ($48/mo annual) and Mega ($96/mo annual) unlock Stealth Mode for private generations and 12 concurrent jobs"
+      "Basic starts at $8/mo annual ($10/mo monthly) for 200 Fast GPU mins (~3.3 hrs) and commercial rights for individuals/small teams",
+      "Standard ($24/mo annual / $30/mo monthly) adds 15 Fast GPU hours and Unlimited Relax mode on V8.2 native 2K HD",
+      "Pro ($48/mo annual / $60 monthly) and Mega ($96/mo annual / $120 monthly) unlock Stealth privacy Mode and 12 concurrent jobs"
     ],
     "cons": [
       "No permanent free tier and no official public REST API",
-      "Basic plan excludes Relax mode, Stealth Mode, and commercial usage rights"
+      "Basic plan excludes Relax/Stealth modes, and companies over $1M gross annual revenue must use Pro or Mega"
     ],
-    "features": ["Unlimited Relax Mode", "Stealth Privacy Mode", "Fast GPU Hours", "Web & Discord UI", "Commercial License"],
-    "updatedAt": "2026-11-24"
+    "features": ["V8.2 Native 2K HD", "Unlimited Relax Mode", "Stealth Privacy Mode", "Instruction Edit Model", "Commercial License"],
+    "updatedAt": "2026-11-25"
   }
 ]
