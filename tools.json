@@ -15,14 +15,14 @@
     "pros": [
       "Access to frontier GPT-6.2 Sol & Astra models (1.05M context window) and Codex coding tools",
       "Strong multi-modal suite with advanced voice, image generation, custom Projects, and extended memory",
-      "Flexible consumer lineup with Free ($0), Go ($8/mo), Plus ($20/mo), and Pro ($100/$200/$500/mo) tiers"
+      "Flexible consumer lineup with Free ($0) & Go ($8/mo) on GPT-6 Luna, Plus ($20/mo), and Pro ($100/$200/$500/mo)"
     ],
     "cons": [
       "No annual discount on individual Plus ($20/mo) subscriptions",
       "Heavy power users require Pro tiers ($100-$500/mo) for highest limits, API credits, and Ultrafast mode"
     ],
     "features": ["GPT-6.2 Sol & Astra", "Codex Agent", "Custom Projects", "Image & Voice", "API Access"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "claude-pro",
@@ -38,7 +38,7 @@
     "tagline": "Anthropic's high-context AI assistant featuring Claude Code, Projects, Artifacts, and Fable 5.2 / Opus 5.5 / Sonnet 5.5 models.",
     "bestFor": "Software engineering, Claude Code terminal workflows, long-document analysis, and nuanced writing",
     "pros": [
-      "Includes Claude Code, Projects, Artifacts, and 1M token context across Fable 5.2, Opus 5.5, Sonnet 5.5, and Haiku 5.5",
+      "Includes Claude Code, Projects, Artifacts, and 1M token context across Opus 5.5, Sonnet 5.5, Haiku 5.5, and Fable 5.2 (native on Max/Ultra)",
       "Annual billing reduces Pro to $17/mo ($200/yr); Max ($100/mo) and Ultra ($200/mo) bundle matching API credits",
       "Industry-leading code refactoring accuracy and natural prose quality"
     ],
@@ -47,7 +47,7 @@
       "No built-in raster image generation"
     ],
     "features": ["Claude Code", "1M Context (5.5/5.2)", "Live Artifacts", "Projects", "API Access"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "gemini-advanced",
@@ -60,7 +60,7 @@
     "apiAvailable": true,
     "rating": 4.9,
     "website": "https://gemini.google.com",
-    "tagline": "Google's Google AI Pro suite combining frontier Gemini Pro/Neon models, Deep Research, Workspace AI, and 5TB storage.",
+    "tagline": "Google's Google AI Pro suite combining Gemini 4 Neon & Hydrogen models, Deep Research, Workspace AI, and 5TB storage.",
     "bestFor": "Google Workspace users, Deep Research reports, long-context video/audio analysis, and cloud storage bundles",
     "pros": [
       "Bundle includes 5 TB Google One storage, $10/mo Google Cloud credits, and Flow credits at $19.99/mo ($199.99/yr)",
@@ -68,10 +68,10 @@
       "AI Plus ($4.99/mo, 400GB) and AI Ultra 5x ($99.99/mo, 20TB) / 20x ($199.99/mo, 30TB) cover light to heavy users"
     ],
     "cons": [
-      "Gemini Carbon models, YouTube Premium, and Colab compute units require the $99.99-$199.99/mo AI Ultra tiers"
+      "Gemini 4 Carbon models, YouTube Premium, and Colab compute units require the $99.99-$199.99/mo AI Ultra tiers"
     ],
     "features": ["1M+ Context", "Workspace AI", "Deep Research", "5TB Storage", "API Access"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "grok-ai",
@@ -96,7 +96,7 @@
       "API requests reaching 200K+ tokens double token pricing across the entire prompt"
     ],
     "features": ["Grok 4.7 Models", "X Bundle + Cursor", "500K-1M Context API", "Video & Image Gen", "Real-Time Search"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "deepseek-ai",
@@ -121,7 +121,7 @@
       "Lacks native video/audio generation or deep Western SaaS office suite integrations"
     ],
     "features": ["V4-Pro & V4.1-Flash", "1M Context Window", "Peak/Off-Peak API", "Context Caching", "Free Web Chat"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "cursor-ide",
@@ -146,7 +146,7 @@
       "Plus ($8/mo) restricts Cursor to Grok models and excludes Cloud Agents, Automations, and Bugbot"
     ],
     "features": ["Cloud Agents", "Bugbot Reviews", "Tab Autocomplete", "Codebase Indexing", "Origin Hosting"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "github-copilot",
@@ -170,7 +170,7 @@
       "Heavy agentic coding workflows consume monthly GitHub AI Credits quickly on the $10 Pro plan"
     ],
     "features": ["1,500+ AI Credits", "Unlimited Completions", "Multi-IDE Support", "PR Reviews", "Enterprise Controls"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "windsurf-ide",
@@ -195,7 +195,7 @@
       "No standalone public developer API (IDE-focused)"
     ],
     "features": ["Cascade Agent", "Unlimited Tab Edits", "Daily/Weekly Quotas", "Frontier Models", "Devin Ecosystem"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "lovable-dev",
@@ -220,7 +220,7 @@
       "Business tier starts at $50/mo (~$42/mo annual) for team workspaces and SSO"
     ],
     "features": ["Full-Stack Builder", "Lovable Cloud", "Code Export", "Custom Domains", "Free Daily Credits"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "bolt-new",
@@ -245,7 +245,7 @@
       "Teams plan ($30/member/mo) required for centralized billing and organization sharing"
     ],
     "features": ["In-Browser IDE", "10M Tokens (Pro)", "Token Rollover", "Integrated Hosting", "Database Connectors"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "perplexity-pro",
@@ -267,10 +267,10 @@
     ],
     "cons": [
       "Less suited for creative fiction writing or multi-file software repository editing",
-      "Highest Deep Research and asset limits require the $200/mo Max tier"
+      "Highest Deep Research, asset limits, and 10,000 monthly Perplexity Computer credits require the $200/mo Max tier"
     ],
     "features": ["Live Citations", "Deep Research", "Multi-Model Switch", "File Analysis", "Sonar API"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "n8n-cloud",
@@ -295,7 +295,7 @@
       "Cloud Pro ($50/mo annual, $60/mo monthly) needed for 10,000 executions and 50 concurrent runs"
     ],
     "features": ["Self-Hostable", "Per-Execution Billing", "AI Agent Nodes", "Custom JS/Python", "400+ Integrations"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "make-automation",
@@ -320,7 +320,7 @@
       "No self-hosted open-source deployment option"
     ],
     "features": ["Visual Canvas", "10K+ Credits", "Make Code JS/Python", "Webhooks & Routers", "Free Tier"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "zapier-automation",
@@ -344,7 +344,7 @@
       "Task-based pricing scales up steeply for high-volume workflows; Team starts at $69/mo annual ($103.50 monthly)"
     ],
     "features": ["6000+ Integrations", "Zapier Tables", "Interfaces & Forms", "Multi-Step Zaps", "Free Tier"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "elevenlabs-ai",
@@ -369,7 +369,7 @@
       "Dubbing and complex multi-speaker workflows consume credits faster than standard TTS"
     ],
     "features": ["Voice Cloning", "AI Dubbing", "Music & SFX", "2-Mo Credit Rollover", "Low-Latency API"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "runway-ai",
@@ -394,7 +394,7 @@
       "Older Unlimited tier was replaced by the credit-capped Max plan"
     ],
     "features": ["Gen-4.5 & Aleph 2.0", "4K & ProRes Export", "Custom Voices", "Runway Dev API", "Credit Rollover"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "suno-ai",
@@ -410,7 +410,7 @@
     "tagline": "AI music creation platform featuring v6 / v6-wild models, Suno Studio browser DAW, stem separation, and commercial rights.",
     "bestFor": "Musicians, video creators, podcasters, and indie studios generating original tracks and stems",
     "pros": [
-      "Free grants 50 daily credits; Pro starts at $8/mo annual ($10/mo monthly) for 2,500 credits and commercial rights",
+      "Free grants 50 daily credits (v6-mini); Pro starts at $8/mo annual ($10/mo monthly) for 2,500 credits and commercial rights",
       "Premier ($24/mo annual / $30/mo monthly) unlocks 10,000 credits, 60 downloads/mo, and Suno Studio DAW",
       "Platinum ($100/mo annual / $120/mo monthly) adds v6 / v6-wild models, 15,000 song + 20,000 visual credits, MIDI, and custom models"
     ],
@@ -419,7 +419,7 @@
       "Monthly track download caps apply (20 on Pro, 60 on Premier, 120 on Platinum)"
     ],
     "features": ["Suno v6 & v6-wild", "Suno Studio DAW", "Stem Separation", "Commercial Rights", "50 Daily Free Credits"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   },
   {
     "id": "midjourney-ai",
@@ -444,6 +444,6 @@
       "Basic plan excludes Relax/Stealth modes, and companies over $1M gross annual revenue must use Pro or Mega"
     ],
     "features": ["V8.2 Native 2K HD", "Unlimited Relax Mode", "Stealth Privacy Mode", "Instruction Edit Model", "Commercial License"],
-    "updatedAt": "2026-11-25"
+    "updatedAt": "2026-11-26"
   }
 ]
